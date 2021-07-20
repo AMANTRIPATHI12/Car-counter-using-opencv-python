@@ -5,7 +5,8 @@ First The Requirements are as follows:
   2. opencv python version 4.5.3.56
 
 Now First importing opencv
-  import cv2
+
+    import cv2
 
 Then i opend the video named video1.mp3
 
