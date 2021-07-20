@@ -25,7 +25,8 @@ Then i opend the video named video1.mp3
         cv2.destroyAllWindows()
         
 Then i put my name there
-        cv2.putText(frame , "Aman Tripathi",(375,30),cv2.FONT_HERSHEY_COMPLEX_SMALL,1,(255,0,0),2)
+
+            cv2.putText(frame , "Aman Tripathi",(375,30),cv2.FONT_HERSHEY_COMPLEX_SMALL,1,(255,0,0),2)
   
 Then creating an object detector
 
@@ -48,6 +49,8 @@ Then created a bounding box around the car
                                 detections.append([x, y, w, h])
 
 Then i imported my tracker module that will track the cars and perticular id's for each car
+
+      from tracker import *
 
         boxes_ids = tracker.update(detections)
           for box_id in boxes_ids:
